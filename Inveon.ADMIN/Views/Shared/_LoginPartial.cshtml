@@ -1,0 +1,18 @@
+﻿@if (Request.IsAuthenticated)
+{
+
+    @Html.AntiForgeryToken()
+    <li><a href="javascript:void(0)"><i class="ti-user m-r-10 text-custom"></i> Profile</a></li>
+    <li><a href="javascript:void(0)"><i class="ti-settings m-r-10 text-custom"></i> Settings</a></li>
+    <li><a href="javascript:void(0)"><i class="ti-lock m-r-10 text-custom"></i> Lock screen</a></li>
+    <li class="divider"></li>
+    <li><a href="/Account/LogOff"><i class="ti-power-off m-r-10 text-danger"></i> Çıkış Yap</a></li>
+ 
+
+}
+else
+{
+    <li><a href="/Account/Login"><i class="ti-power-off m-r-10 text-success"></i> Giriş Yap</a></li>
+    <li><a href="/Account/Register"><i class="ti-power-off m-r-10 text-success"></i> Kayıt Ol</a></li>
+
+}
