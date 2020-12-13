@@ -5,12 +5,12 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="card-box table-responsive">
-                        <h4 class="m-t-0 header-title"><b>ÜRÜN LİSTESİ</b></h4> 
+                        <h4 class="m-t-0 header-title"><b>ÜRÜN LİSTESİ</b></h4>
                         <table id="datatable-colvid" class="table table-striped table-bordered">
                             <thead>
                                 <tr>
                                     <th>
-                                        Image
+                                        Main  Image
                                     </th>
                                     <th>
                                         Name
@@ -19,16 +19,22 @@
                                         Description
                                     </th>
                                     <th>
+                                        Barcode
+                                    </th>
+                                    <th>
                                         Price
                                     </th>
                                     <th>
                                         Quantity
                                     </th>
                                     <th>
-                                        Barcode
-                                    </th> 
+                                        Record Date
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
                                     <th style="width: 100px">
-                                        <a href="/urun/ekle/@ViewBag.ProductId" class="btn btn-default btn-md waves-effect waves-light" data-animation="fadein" data-overlaySpeed="200" data-overlayColor="#36404a"><i class="md md-add"></i>Ürün Ekle</a>
+                                        <a href="/urun/ekle" class="btn btn-default btn-md waves-effect waves-light" data-animation="fadein" data-overlaySpeed="200" data-overlayColor="#36404a"><i class="md md-add"></i>Ürün Ekle</a>
                                     </th>
                                 </tr>
                             </thead>
@@ -37,72 +43,55 @@
                                 {
                                     <tr>
                                         <td>
-                                            <img src="/assets/images/products/@item.ListingImage" alt="@item.ListingImage" class="img-responsive img-rounded" width="100px;" />
+                                            <img src="/assets/images/products/@item.MediaList.FirstOrDefault()" alt="" class="img-responsive img-rounded" width="100px;" />
                                         </td>
-                                        @*<td>
-                                                @foreach (var image in item.ProductCodeImages)
-                                                {
-                                                    <div class="col-sm-2">
-                                                        <img src="/assets/images/products/@image.Name" alt="image" class="img-responsive img-rounded" />
-                                                    </div>
-                                                }
-                                            </td>*@
+
                                         <td>
                                             <span>
-                                                @item.Color.Name
+                                                @item.Name
                                             </span>
 
                                         <td>
                                             <span>
-                                                @item.Gender.Name
+                                                @item.Description
                                             </span>
                                         </td>
 
                                         <td>
-                                            @foreach (var size in item.ProductSizes)
-                                            {
-                                                <li>@size.Size.Name.ToUpper()</li>
-                                            }
-                                        </td>
-                                        <td>
-                                            @foreach (var stock in item.ProductSizes)
-                                            {
-                                                if (stock.Stock != null)
-                                                {
-                                                    <li>@stock.Stock</li>
-                                                }
-                                                else
-                                                {
-                                                    <li>---</li>
-                                                }
-                                            }
+
+                                            <span>
+                                                @item.Barcode
+                                            </span>
+
                                         </td>
                                         <td>
                                             <span>
-                                                ₺ @item.MarketPrice
+                                                ₺ @item.Price
                                             </span>
                                         </td>
                                         <td>
                                             <span>
-                                                ₺ @item.SellPrice
+                                                @item.Quantity
                                             </span>
                                         </td>
                                         <td>
-                                            <span class="label label-@(item.IsHome ? "success" : "danger")">@(item.IsHome ? "Evet" : "Hayır")</span>
+                                            <span>
+                                                @item.RecordDate
+                                            </span>
                                         </td>
+
                                         <td>
                                             <span class="label label-@(item.RecordIsDeleted ? "danger" : "success")">@(item.RecordIsDeleted ? "Pasif" : "Aktif")</span>
                                         </td>
                                         <td>
-                                            <a href="/urun/@item.ProductCode" class="table-action-btn"><i class="md md-remove-red-eye"></i></a>
-                                            <a href="/urun/duzenle/@item.ProductCode" class="table-action-btn"><i class="md md-edit"></i></a>
+                                            <a href="/urun/duzenle/@item.Id" class="table-action-btn"><i class="md md-edit"></i></a>
                                             @if (!item.RecordIsDeleted)
                                             {
-                                                <a href="/urun/sil/@item.ProductCode" class="table-action-btn"><i class="md md-delete"></i></a>
+                                                <a href="/urun/sil/@item.Id" class="table-action-btn"><i class="md md-delete"></i></a>
                                             }
                                             else
                                             {
-                                                <a href="/urun/aktifyap/@item.ProductCode" class="table-action-btn"><i class="md md-check"></i></a>
+                                                <a href="/urun/aktifyap/@item.Id" class="table-action-btn"><i class="md md-check"></i></a>
                                             }
                                         </td>
                                     </tr>
