@@ -5,6 +5,7 @@ namespace Inveon.Business.Interfaces
 {
     public interface IProductService : IEntityService<Product>
     {
+        void AddProduct(Product product);
         /// <summary>
         /// Get single product details
         /// </summary>

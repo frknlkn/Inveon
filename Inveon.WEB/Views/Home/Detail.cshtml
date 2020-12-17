@@ -1,7 +1,79 @@
-﻿
-@{
-    ViewBag.Title = "Detail";
-}
+﻿@using Inveon.WEB.Models
+@model ProductViewModel
+<link href="~/assets/css/default.css" rel="stylesheet" />
+<link href="~/assets/css/components.min.css" rel="stylesheet" />
 
-<h2>Detail</h2>
+<main>
+    <section class="general-section">
+        <div class="container product-container">
+            <div class="row product-details">
+                <div class="col-md-6 product-images">
+                    <div class="thumb-slider-wrap">
+                        <div class="thumb-slider owl-carousel">
+                            @foreach (var image in Model.MediaList)
+                            {
+                                <div class="item">
+                                    <img class="img-fluid" src="@image.Path" data-zoom-img="@image.Path" data-thumb="@image.Path" alt="" />
+                                </div>
+                            } 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-24 order-1 order-lg-2">
+     
+                        <div class="product-info">
+                            <h1 class="title">@Model.Name</h1>
+                            @*<div class="product-brand-name">
+                                <span> @Model.Description </span>
+                            </div>*@
+                            <div class="product-info-code">
+                                <span>Ürün kodu: @Model.Barcode </span>
+                            </div>
+                            <div class="product-info-prices">
+                                <div class="product-info-prices-left"> 
+                                    <div class="product-info-prices-new">@Model.Price TL</div>
+                                </div> 
+                            </div>
+
+                            <div class="product-info-color">
+                                <div class="product-info-color-title">
+                                    <span>Son</span> <b>@Model.Quantity</b><span>ürün</span>
+                                </div> 
+                            </div>
+                           
+                            <ul class="nav nav-tabs primary-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#description-tab" role="tab" aria-selected="true">Ürün Hakkında</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#cargo-tab" role="tab" aria-selected="true">Teslimat</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content primary-tab-content">
+                                <div class="tab-pane fade show active" id="description-tab" role="tabpanel">
+                                    <article class="primary-article">
+                                        <p>
+                                            @Model.Description
+                                        </p>
+
+                                    </article>
+                                </div>
+                                <div class="tab-pane fade show" id="cargo-tab" role="tabpanel">
+                                    <article class="primary-article">
+                                        <p>
+                                            Tahmini teslimat süresi, bulunduğunuz adrese göre 5-11 iş günü arasında değişkenlik gösterecektir (Pazar günleri ve resmi tatiller hariçtir).
+                                        </p>
+
+                                    </article>
+                                </div>
+                            </div>
+
+                        </div>
+               
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
 

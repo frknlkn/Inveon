@@ -320,8 +320,8 @@ blockquote small {
   min-height: 380px;
 }
 .thumb-sm {
-  height: 32px;
-  width: 32px;
+  height: 72px;
+  width: 52px;
 }
 .thumb-md {
   height: 48px;

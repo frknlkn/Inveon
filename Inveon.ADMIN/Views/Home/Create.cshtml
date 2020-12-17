@@ -1,0 +1,59 @@
+﻿@using Inveon.ADMIN.Models
+@model ProductViewModel
+<div class="content-page">
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="page-title">Ürün Ekle</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                        <form action="/ekle" method="post" enctype="multipart/form-data">
+                            @Html.AntiForgeryToken()
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card-box">
+                                        <div class="form-group">
+                                            <label>Ürün Adı</label>
+                                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                            <hr>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Ürün Açıklaması</label>
+                                            <textarea class="form-control" name="Description" rows="5" placeholder="Lütfen açıklama giriniz"></textarea>
+                                            <hr>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Satış Fiyatı (₺)</label>
+                                            @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Stok</label>
+                                            @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                                            <hr>
+                                        </div>
+                                        <div class="form-group m-b-20">
+                                            <label class="control-label">Ürünün resimlerini ekleyin<span class="text-danger">*</span></label>
+                                            <input type="file" name="MediaFiles" id="files" multiple="multiple" class="filestyle" data-buttonname="btn-primary">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <hr />
+                                    <div class="text-center p-20">
+                                        <button type="button" class="btn w-sm btn-white waves-effect">Vazgeç</button>
+                                        <button type="submit" class="btn w-sm btn-default waves-effect waves-light">Kaydet</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>  
+    </div>  
+</div>

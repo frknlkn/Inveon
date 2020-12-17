@@ -1,0 +1,879 @@
+﻿
+#container {
+    background-color: #faf9f9;
+    padding-bottom: 40px;
+}
+
+#container, #footer, #header {
+    position: relative;
+    float: left;
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    width: 1080px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.discountCoupons .couponBoxContainer .coupon-box label.marker, .left-menu ul .active a, .left-menu ul > li > a:hover {
+    color: #f68428;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+div {
+    display: block;
+}
+
+.header-right ul, blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, th, ul {
+    margin: 0;
+    padding: 0;
+}
+
+#account {
+    font-size: 13px;
+}
+
+.grid-pad-top-bottom-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.account-info section select, .grid:after, [class*=col-], [class*=grid], [class*=mobile-] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.grid-pad-top-bottom-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid:after, [class*=col-], [class*=grid], [class*=mobile-] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.left-menu {
+    float: left;
+    width: 200px;
+}
+
+    .left-menu > h2 {
+        float: left;
+        margin: 10px 0 15px 15px;
+        font-size: 24px;
+        color: #000;
+    }
+
+h1, h2, h3, h4, span.last-operation-message-span {
+    font-weight: 700;
+}
+
+.left-menu ul {
+    float: left;
+    margin-left: 15px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.left-menu ul > li {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+    .left-menu ul > li > a {
+        display: block;
+        width: 170px;
+        padding: 10px 0;
+        color: #262626;
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 13px;
+    }
+
+a {
+    text-decoration: none;
+}
+
+a {
+    color: #1b1b1b;
+}
+
+a, div.ty-dropdown-div a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+i {
+    font-style: italic;
+}
+
+user agent stylesheet li {
+    text-align: -webkit-match-parent;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+.page-content {
+    float: right;
+    width: 880px;
+    min-height: 250px;
+    border: #ededed;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.grid-pad-top-bottom-30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.grid-pad {
+    padding: 50px 20px;
+}
+
+.account-info .account-update, .account-info .email-update, .account-info .password-update, .account-info h3, .account-info h4 {
+    float: left;
+    width: 100%;
+}
+
+.account-info h3 {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.account-info h4 {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+    color: #f68428;
+}
+
+h1, h2, h3, h4, span.last-operation-message-span {
+    font-weight: 700;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+
+#hiddenCityId, .account-info .form-input {
+    position: relative;
+}
+
+.account-info section {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+    .account-info section .fl {
+        float: left;
+        max-width: 140px;
+    }
+
+.orders-header-container {
+    border-radius: 3px;
+}
+
+.order-parent-container, .orders-header-container {
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    color: #444;
+}
+
+.orders-header-container {
+    background: #fff;
+}
+
+.fl {
+    float: left;
+}
+
+.account-info .updateBtn {
+    border: 1px solid #fcb982;
+    -ms-border-radius: 4px;
+    color: #f68428;
+    float: right;
+    cursor: default;
+}
+
+.account-info section {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+.page-content .updateBtn {
+    margin: 0 auto;
+    width: 180px;
+    border: 1px solid #fcb982;
+    color: #f68428;
+}
+
+.page-content .confirmBtn, .page-content .updateBtn {
+    position: relative;
+    display: block;
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 37px;
+}
+
+.account-info section input[type=password], .account-info section input[type=text] {
+    float: right;
+    width: 50%;
+    background-color: #f6f6f6;
+    border: 1px solid #ededed;
+    font-size: 10px;
+    color: #666;
+    padding: 5px 10px 5px 10px;
+}
+
+input[type=password], input[type=text] {
+    background-color: transparent;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.selectbox-group {
+    float: right;
+    width: 60%;
+}
+
+.account-info section .date-selectbox:first-child {
+    margin-left: 0;
+}
+
+.account-info section .date-selectbox {
+    float: left;
+    display: inline-block;
+    width: 28%;
+    margin-left: 10px;
+    background-position: 39px center;
+}
+
+.account-info section .selectbox {
+    position: relative;
+    height: 30px;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    border: 1px solid #ededed;
+}
+
+.account-info section .date-selectbox select {
+    width: 140%;
+}
+
+.account-info section select {
+    position: relative;
+    background: 0 0;
+    border: 0;
+    height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding: 0 6px;
+    width: 140%;
+    -moz-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+.account-info section .selectbox::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    top: 50%;
+    right: 3px;
+    margin-top: -4px;
+    background: url(/theme/img/sort-down-solid.svg) no-repeat 100% bottom;
+    background-repeat: no-repeat;
+    -ms-background-size: 100%;
+    background-size: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.account-info .checkBox {
+    position: relative;
+    float: right;
+    width: 90px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+
+    .account-info .checkBox input[type=radio]:checked:not(old) + label {
+        background-position: left -15px;
+    }
+
+    .account-info .checkBox input[type=radio]:not(old) + label {
+        display: inline-block;
+        padding-left: 28px;
+    }
+
+    .account-info .checkBox label {
+        float: left;
+        width: 60px;
+        height: 19px;
+        display: block;
+    }
+
+    .account-info .checkBox input[type=radio]:not(old), input[type=checkbox]:not(old) {
+        position: absolute;
+        left: 0;
+        width: 28px;
+        margin: 4px 0;
+        padding: 0;
+    }
+
+.page-content .confirmBtn, .page-content .updateBtn:hover {
+    background-color: #f68428;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.updateBtn.active {
+    background-color: #f68428;
+    color: #fff;
+}
+
+.page-content .active {
+    background-color: #f68428;
+    color: #fff;
+}
+
+.account-info .active {
+    background-color: #f68428;
+    color: #fff;
+    cursor: pointer;
+}
+
+.page-content .updateBtn {
+    margin: 0 auto;
+    width: 180px;
+    border: 1px solid #fcb982;
+    color: #f68428;
+}
+
+.page-content .confirmBtn, .page-content .updateBtn {
+    position: relative;
+    display: block;
+    height: 35px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 37px;
+    transition: .5s;
+}
+
+.account-info .validation-summary-container {
+    text-align: right;
+    color: #ff6b6b;
+    display: none;
+}
+
+.account-info section {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    line-height: 30px;
+}
+
+.no-padding-right {
+    padding-right: 0 !important;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    float: left;
+}
+
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+}
+
+.border-right {
+    border-right: 1px solid #ededed;
+}
+
+.page-content .row {
+    width: 100%;
+    margin: 0px;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+
+.account-info section select, .grid::after, [class*="col-"], [class*="grid"], [class*="mobile-"] {
+    box-sizing: border-box;
+}
+
+.order-parent-header {
+    background-color: rgb(250, 250, 250);
+    color: rgb(68, 68, 68);
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+h1, h2, h3, h4, span.last-operation-message-span {
+    font-weight: 700;
+}
+
+.horizontal-separator {
+    width: 100%;
+    background-color: #ededed;
+    height: 1px;
+    margin: 30px 0;
+}
+
+
+.account-info section select, .grid:after, [class*=col-], [class*=grid], [class*=mobile-] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.addressInfo, .addressInfo .titleBox .title {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    color: #262626;
+    font-family: source_sans_proregular;
+}
+
+    .addressInfo .addressList {
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .addressInfo .newAddress {
+        margin-top: 25px;
+    }
+
+.marginb-20 {
+    margin-bottom: 20px;
+}
+
+
+.addressInfo .newAddress .addressInfoBox {
+    position: relative;
+    cursor: pointer;
+    display: table;
+    width: 100%;
+}
+
+.addressInfo .addressInfoBox {
+    float: left;
+    background-color: #f6f6f6;
+    width: 100%;
+    min-height: 170px;
+}
+
+.center-plus-button {
+    width: 100%;
+    height: 170px;
+    background: url(https://static.dsmcdn.com/frontend/web/assets/images/add-new-address-icon.png) no-repeat center 30px;
+    display: block;
+}
+
+.addressInfo .addressInfoBox label {
+    padding: 20px;
+    float: left;
+    text-align: left;
+    width: 90%;
+}
+
+#UpdateAddressForm .newAddress label, .addressInfo .newAddress label {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.addressList .titleBox {
+    float: left;
+    width: 100%;
+    height: 25px;
+}
+
+.addressInfo .titleBox .title {
+    width: 78%;
+    font-weight: 600;
+    color: #f68428;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.addressList .titleBox .delete {
+    float: right;
+    width: 5%;
+    padding: 3px 0 0;
+    background: url(https://static.dsmcdn.com/frontend/web/assets/images/delete-icon.png) no-repeat right center;
+    cursor: pointer;
+    height: 20px;
+    font-family: source_sans_probold_italic;
+}
+
+.addressInfo .addressInfoBox label span {
+    float: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.addressInfo .addressInfoBox label .username {
+    display: block;
+    width: 100%;
+    font-family: source_sans_proregular;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.Address-line-1, .Address-line-2 {
+    width: 99%;
+    display: block;
+}
+
+.Address-line-1, .Address-line-2, .addressInfo .addressInfoBox label .username {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.addressInfo .addressInfoBox label span.address {
+    line-height: 18px;
+}
+
+.address-form-hide {
+    display: none !important;
+}
+
+.addressList .titleBox .edit {
+    float: left;
+    width: 15%;
+    padding: 0 5px 0 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    text-decoration: none;
+    background-color: #fff;
+}
+
+
+
+/* Address Pop-up*/
+#modal-container {
+    padding: 15px 0 30px;
+}
+
+#modal-container {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    height: auto;
+    padding: 15px 30px 30px;
+    font-size: 12px;
+    overflow: auto;
+}
+
+#modal-container, #modal-overlay {
+    font-family: "source_sans_proregular";
+    position: absolute;
+    z-index: 998;
+}
+
+#modal-header {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    clear: both;
+    z-index: 9999;
+}
+
+#modal-close {
+    background: #fff url(https://static.dsmcdn.com/frontend/web/assets/images/sss-popup-close-icon.png) no-repeat center center;
+    cursor: pointer;
+    display: block;
+    filter: alpha(opacity=60);
+    -moz-opacity: .6;
+    -webkit-opacity: .6;
+    -ms-filter: alpha(opacity=60);
+    opacity: .6;
+    float: right;
+    height: 20px;
+    width: 20px;
+}
+
+#modal-content {
+    width: 100%;
+    display: block;
+    z-index: 999;
+}
+
+    #modal-content .page-content {
+        width: auto;
+    }
+
+
+.newAddressPage {
+    padding: 0 20px;
+}
+
+#AddNewAddressForm .form-input, #UpdateAddressForm .form-input, .newAddressPage {
+    position: relative;
+}
+
+    .newAddressPage .addressHeader, .newAddressPage section {
+        position: relative;
+        float: left;
+        height: 30px;
+        width: 99%;
+    }
+
+        .newAddressPage .addressHeader .addresstitle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 18px;
+            color: #262626;
+        }
+
+    .newAddressPage .headline {
+        position: absolute;
+        top: 30px;
+        left: -17px;
+        background-color: #e6e6e6;
+        width: 110%;
+        height: 1px;
+        display: block;
+    }
+
+    .newAddressPage section {
+        margin: 10px 0 0;
+        width: 100%;
+        height: 60px;
+        line-height: 30px;
+    }
+
+        .newAddressPage section label:first-child {
+            margin-left: 0;
+        }
+
+        .newAddressPage section label {
+            position: relative;
+            display: block;
+            float: left;
+            margin-left: 20px;
+            width: 180px;
+        }
+
+            .newAddressPage section label input[type=text] {
+                width: 140px;
+                display: block;
+            }
+
+        .newAddressPage section input[type=text] {
+            height: 20px;
+            padding: 5px 30px 5px 10px;
+            width: 340px;
+        }
+
+        .newAddressPage section input[type=password], .newAddressPage section input[type=text], .newAddressPage section textarea {
+            background-color: #f6f6f6;
+            border: 1px solid #ededed;
+            color: #666;
+            float: left;
+            font-size: 12px;
+        }
+
+/*Table*/
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: 0;
+    border-top: none
+}
+
+@media (min-width: 992px) {
+    .col-lg-5 {
+        width: 41.66667%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+        float: left;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+        float: left;
+    }
+}
+
+}
+
+@media (min-width: 1200px) {
+    #container {
+        position: relative;
+        float: left;
+        width: auto;
+        display: block;
+    }
+}
+
+@media (max-width: 1100px) {
+    #container {
+        width: auto;
+    }
+}
+
+.enum-waiting {
+    color: #f7ca6a
+}
+.enum-approved {
+    color: blue
+}
+.enum-denied {
+    color: #dc3545
+}
+.enum-shipment {
+    color: #15AABF
+}
+.enum-finish {
+    color: #ff7316
+}
+ 
+.bg-none {
+    background: none;
+}
+
+.bg-ebeb {
+    background: #ebebeb
+}
+
+.table-order {
+    background: #FAFAFA;
+    border: 2px solid #ebebeb;
+}
+
+.table-thead-order {
+    border-bottom: 2px solid #ebebeb;
+}
+
+.table-tbody-order {
+    background: #FFF;
+    height: 20%;
+}
+
+.table-order-color {
+    color: #f68428;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w40 {
+    width: 40%;
+}
+.w30 {
+    width: 30%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.shadow-none {
+    box-shadow: none;
+}
+.tbody-td {
+    font-size: 12px;
+    color: #666;
+    line-height: 20px;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.salePrice {
+    color: #f26726;
+}
+.bold-text-600 {
+    font-weight: 600;
+}
+.bold-text-500 {
+    font-weight: 500;
+}

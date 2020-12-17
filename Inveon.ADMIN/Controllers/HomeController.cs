@@ -16,7 +16,7 @@ namespace Inveon.ADMIN.Controllers
         private readonly IMediaService mMediaService;
         private readonly IMapper mMapper;
 
-        public HomeController(IProductService productService,IMediaService mediaService, IMapper mapper)
+        public HomeController(IProductService productService, IMediaService mediaService, IMapper mapper)
         {
             mMapper = mapper;
             mProductService = productService;
@@ -40,25 +40,28 @@ namespace Inveon.ADMIN.Controllers
             }
             return View(models);
         }
-        [HttpGet]
+        [HttpGet, Route("ekle")]
         public ActionResult Create()
         {
-            return View();
+            return View(new ProductViewModel());
         }
 
-        [HttpPost]
+        [HttpPost, Route("ekle")]
         public ActionResult Create(ProductViewModel model)
         {
             var product = mMapper.Map<Product>(model);
             product.Barcode = BarcodeHelper.RandomProductCode();
-            mProductService.Add(product);
-            foreach (var item in model.MediaList)
+            mProductService.AddProduct(product);
+            string mapPath = Server.MapPath(ReadSettingsHelper.ImagePath());
+            int nodeOrder = 1;
+            foreach (var item in model.MediaFiles)
             {
-                var media = mMapper.Map<Media>(item);
-                mMediaService.AddMedia(product.Barcode,media);
+                //var media = mMapper.Map<Media>(item);
+                mMediaService.AddMedia(product.Barcode, item, mapPath,nodeOrder);
+                nodeOrder++;
             }
 
-            return View(model);
+            return RedirectToAction("Index","Home") ;
         }
 
 

@@ -1,4 +1,7 @@
-﻿using System.Linq;
+﻿using System.IO;
+using System.Linq;
+using System.Web;
+using AutoMapper;
 using Inveon.Business.Interfaces;
 using Inveon.DataAccess.Concrete.EntityFramework;
 using Inveon.DataAccess.Interfaces;
@@ -19,10 +22,25 @@ namespace Inveon.Business.Concrete
             _productRepository = productRepository;
         }
 
-        public void AddMedia(string barcode, Media media)
+        public void AddMedia(string barcode, HttpPostedFileBase fileBase, string mapPath,int nodeOrder)
         {
-            media.ProductId = _productRepository.FindBy(x => x.Barcode == barcode).Select(x => x.Id).FirstOrDefault();
+
+            SaveFilePath(fileBase, mapPath);
+            var media = new Media()
+            {
+                Name =fileBase.FileName,
+                ProductId = _productRepository.FindBy(x => x.Barcode == barcode).Select(x => x.Id).FirstOrDefault(),
+                NodeOrder = nodeOrder,
+                Path = Path.GetFileName(fileBase.FileName)
+            };
             Add(media);
+        }
+
+        private void SaveFilePath(HttpPostedFileBase fileBase, string mapPath)
+        {
+            var inputFileName = Path.GetFileName(fileBase.FileName);
+            var serverSavePath = Path.Combine(mapPath + inputFileName);
+            fileBase.SaveAs(serverSavePath);
         }
     }
 

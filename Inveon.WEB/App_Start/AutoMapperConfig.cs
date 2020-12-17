@@ -16,6 +16,8 @@ namespace Inveon.WEB
             var configuration = new MapperConfiguration(cfg =>
             {
                 cfg.CreateMap<Product, ProductViewModel>();
+                cfg.CreateMap<Media, MediaViewModel>();
+
             });
             return configuration;
         }

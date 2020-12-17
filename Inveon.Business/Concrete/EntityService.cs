@@ -2,6 +2,7 @@
 using Inveon.DataAccess.Interfaces;
 using System;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace Inveon.Business.Concrete
 {
@@ -46,6 +47,11 @@ namespace Inveon.Business.Concrete
         {
             return _repository.GetAll();
         }
+        public IQueryable<T> FindBy(Expression<Func<T, bool>> predicate)
+        {
+            return _repository.FindBy(predicate);
+        }
 
+       
     }
 }

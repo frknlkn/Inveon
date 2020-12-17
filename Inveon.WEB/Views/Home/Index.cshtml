@@ -1,1 +1,42 @@
-﻿
+﻿@using Inveon.WEB.Models
+@model List<ProductViewModel>
+
+
+
+<section>
+    <div class="container">
+        <div class="wrapper">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="/@item.Id">
+                                    @if (item.MediaList.Any())
+                                    {
+                                        for (int i = 0; i < 2; i++)
+                                            {
+                                            <img class="pic-@(i + 1)" src="@item.MediaList.ToArray()[i].Path">
+                                        }
+
+                                    }
+                                </a>
+                                <ul class="social">
+                                    <li><a href="/urun/@item.Id" data-tip="Ürünü İncele"><i class="fa fa-search"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="/urun/@item.Id">@item.Name</a></h3>
+
+                                <div class="price">₺ @item.Price</div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

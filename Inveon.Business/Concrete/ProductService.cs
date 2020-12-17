@@ -1,4 +1,5 @@
-﻿using Inveon.Business.Interfaces;
+﻿using System;
+using Inveon.Business.Interfaces;
 using Inveon.DataAccess.Interfaces;
 using System.Collections.Generic;
 using Inveon.DataAccess.Concrete.EntityFramework;
@@ -17,6 +18,13 @@ namespace Inveon.Business.Concrete
             _productRepository = productRepository;
         }
 
+
+        public void AddProduct(Product product)
+        {
+            product.RecordDate= DateTime.Now;
+            product.UpdateDate= DateTime.Now;
+            Add(product);
+        }
 
         public Product GetProduct(int id)
         {

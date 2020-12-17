@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Web;
 
 namespace Inveon.ADMIN.Models
 {
@@ -15,5 +16,6 @@ namespace Inveon.ADMIN.Models
         public DateTime? UpdateDate { get; set; }
         public bool RecordIsDeleted { get; set; }
         public List<MediaViewModel> MediaList { get; set; }
+        public List<HttpPostedFileBase> MediaFiles { get; set; }
     }
 }

@@ -1,10 +1,19 @@
-﻿namespace Inveon.WEB.Models
+﻿using Inveon.WEB.Helpers;
+
+namespace Inveon.WEB.Models
 {
     public class MediaViewModel
-    {
-        public int Id { get; set; }
+    { 
+        public int Id { get; set; } 
         public string Name { get; set; }
-        public string Path { get; set; }
+        private string _Path { get; set; }
+
+        public string Path
+        {
+            get => _Path;
+            set => _Path = ReadSettingsHelper.ImagePath().Replace("~", string.Empty) + value;
+        }
+
         public int NodeOrder { get; set; }
     }
 }
